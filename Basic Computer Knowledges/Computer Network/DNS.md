@@ -25,11 +25,14 @@ Tree Structure
 
 ## Domain Name Resolution
 
+Recursive query/ Iterative query
+
 - Cache
   - Browser cache
-  - host
-  - Router
+  - Operating System cache（hosts）
+  - Router cache
+
 - Local Name Server
 - Root Name Server
-- Authoritative Name Server
 - Top Level Name Server
+- Authoritative Name Server

@@ -4,21 +4,21 @@ Hyper Text Transfer Protocol
 
 
 
-| HTTP request message |                                                           |
-| -------------------- | --------------------------------------------------------- |
-| request line         | request method\| request URI\| HTTP Protocol Version      |
-| request header       | Header-name: Header-value,<br />Header-name: Header-value |
-| blank line           |                                                           |
-| request body         |                                                           |
+| HTTP request message |                                                              |
+| -------------------- | ------------------------------------------------------------ |
+| Request Line         | Method <SP> Request-URI <SP> HTTP-Version <CRLF>             |
+| Request Header       | Request-Header Fields1：value1,<br />Request-Header Fields2：value2, |
+| Blank Line           |                                                              |
+| Request body         |                                                              |
 
 
 
-| HTTP response message |                                                   |
-| --------------------- | ------------------------------------------------- |
-| status line           | HTTP Protocol Version｜Status-code｜Status-phrase |
-| response header       |                                                   |
-| blank line            |                                                   |
-| response body         |                                                   |
+| HTTP response message |                                                              |
+| --------------------- | ------------------------------------------------------------ |
+| Status Line           | HTTP-Version <SP> Status-code <SP> Reason-Phrase <CRLF>      |
+| Response Header       | Response-Header Fields1: Value1<br />Response-Header Fields2: Value2 |
+| Blank Line            |                                                              |
+| Response Body         |                                                              |
 
 
 
@@ -34,61 +34,68 @@ HTTP Versions
 
 ## HTTP/0.9
 
-只有GET
+Method：GET
+
+- Simplex Request-Response
+- Only HTML
+- Terminated immediately after the response
 
 
 
 ## HTTP/1.0
 
-新增POST、PUT、DELETE等
+https://www.w3.org/Protocols/HTTP/1.0/spec
 
-特性：
+Methods：Get、HEAD、POST
 
-- 无状态
-- 无连接
+Additional Methods：PUT、DELETE、LINK、UNLINK
+
+- Full Duplex Request-Response
+- 请求完断开，Connection：keep-alive
+- 缓存机制
+- 数据类型
+- 安全机制
 
 
 
 ## HTTP/1.1
 
-特性：
+https://www.w3.org/Protocols/rfc2616/rfc2616.html
 
-- 长连接
-- 管道化
-- 缓存处理
-- 断点传输
+https://www.rfc-editor.org/rfc/rfc9110.html
+
+Method：GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE
+
+- Persistent connections
+- Pipelining
+- Cache Control
 
 
 
-缺点：
+Disadvantage：
 
-- TCP慢启动
-- 队头阻塞
-- 多条TCP连接竞争
+- HTTP：head-of-line blocking
 
 
 
 ## HTTP/2.0
 
-特性：
+- Request multiplexing：Binary Frame
+- Data compression of HTTP headers
+- Prioritization of requests
+- Server push
+- 安全性
 
-- 多路复用
-- 二进制分帧
-- 头部压缩
 
 
+Disadvantage：
 
-缺点：
-
-- 传输层的TCP 队头阻塞
-- TCP握手延迟
+- TCP：head-of-line blocking
 - TCP协议僵化
 
 
 
 ## HTTP/3.0
-
-特性：
 
 - QUIC
 
