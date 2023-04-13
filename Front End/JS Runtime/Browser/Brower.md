@@ -1,10 +1,20 @@
-# 进程/ 线程
+# Process/ Thread
 
-
+- Main process
+- Rendering process
+  - Rendering thread
+  - JS thread
+  - 
 
 # Critical Rendering Path
 
-
+- Parse HTML
+- Parse JS
+- Parse CSS
+- Layout Tree
+- Layout 
+- Paint
+- Display
 
 # Parse HTML
 
