@@ -97,7 +97,10 @@ Disadvantage：
 
 ## HTTP/3.0
 
-- QUIC
+- QUIC （based on UDP）
+  - TCP
+  - TLS
+
 
 
 

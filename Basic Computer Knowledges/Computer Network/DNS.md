@@ -36,3 +36,10 @@ Recursive query/ Iterative query
 - Root Name Server
 - Top Level Name Server
 - Authoritative Name Server
+
+
+
+
+
+## DNS query message
+

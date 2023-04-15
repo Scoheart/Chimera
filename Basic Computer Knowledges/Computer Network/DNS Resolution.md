@@ -1,0 +1,12 @@
+- 查看浏览器缓存
+- 查看操作系统缓存
+- 向本地Name Server发起DNS解析请求
+  - 构建DNS query message
+  - UDP port
+  - IP ip
+    - ARP 如果DNS服务器在同子网
+      - MAC地址位DNS服务器
+    - 如果不在
+      - ARP 到路由器
+  - Frame mac
+  - bit
