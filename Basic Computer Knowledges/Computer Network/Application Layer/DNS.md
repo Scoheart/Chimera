@@ -43,3 +43,7 @@ Recursive query/ Iterative query
 
 ## DNS query message
 
+![image-20230416011517532](./DNS.assets/image-20230416011517532.png)
+
+- Transaction ID 事务ID，是DNS报文的标识
+- Flags
