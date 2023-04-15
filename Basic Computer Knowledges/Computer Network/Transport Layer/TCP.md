@@ -1,8 +1,6 @@
 # PDU
 
-![image-20230415144806355](/Users/scoheart/Library/Mobile Documents/iCloud~md~obsidian/Documents/scoheart/Basic Computer Knowledges/Computer Network/Transport Layer/TCP.assets/image-20230415144806355.png)
-
-
+![image-20230415175841538](./TCP.assets/image-20230415175841538.png)
 
 - 
   - Source port
