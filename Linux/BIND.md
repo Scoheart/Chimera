@@ -1,0 +1,7 @@
+- / 根目录
+  - /etc：et cetera
+  - /bin：binary
+  - /var：variable
+  - /tmp：temporary
+  - /home
+  - 
