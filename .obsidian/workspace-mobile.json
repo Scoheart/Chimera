@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Linux/文件树.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Untitled.md",
+            "file": "Linux/文件树.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Untitled.md",
+            "file": "Linux/文件树.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Untitled.md"
+            "file": "Linux/文件树.md"
           }
         }
       }
@@ -133,6 +133,13 @@
   },
   "active": "8e73db0084d818c8",
   "lastOpenFiles": [
+    "Linux/BIND.md",
+    "Front End/字节直播.md",
+    "Front End/Build Tools/Task Runner/Brower.md",
+    "Front End/7 Rendering Frameworks/index.md",
+    "Basic Computer Knowledges/Computer Network/Network Layer/路由算法.md",
+    "Basic Computer Knowledges/Computer Network/Network Layer/Overview.md",
+    "Database/Untitled 1.md",
     "Basic Computer Knowledges/Computer Network/Application Layer/DNS报文发送过程.md",
     "Basic Computer Knowledges/Computer Network/Application Layer/DHCP.assets/image-20230416191633437.png",
     "Front End/4 JS Runtime/Browser/Brower.md",
@@ -143,14 +150,12 @@
     "Basic Computer Knowledges/Computer Network/Network Layer/ARP.md",
     "Basic Computer Knowledges/Computer Network/Network Layer/ARP.assets/image-20230416204009226.png",
     "Untitled.md",
-    "Linux/BIND.md",
     "Linux/文件树.md",
     "Basic Computer Knowledges/Computer Network/冲突域、广播域.md",
     "Basic Computer Knowledges/Computer Network/冲突域、广播域.assets/image-20230416210705153.png",
     "Basic Computer Knowledges/Computer Network/冲突域、广播域.assets/image-20230416210501774.png",
     "Basic Computer Knowledges/Computer Network/冲突域、广播域.assets/image-20230416210602748.png",
     "Front End/Build Tools/Compilers or Transpilers/Babel.md",
-    "Front End/Build Tools/Task Runner/Brower.md",
     "Basic Computer Knowledges/Computer Network/Application Layer/DHCP.md",
     "Front End/5 JS Package/npm/npm.md",
     "Basic Computer Knowledges/Computer Network/Network Layer/ARP.assets/image-20230416200929688.png",
@@ -164,11 +169,6 @@
     "Front End/4 JS Runtime/Browser/浏览器内核.md",
     "Front End/3 JS/同步、异步.md",
     "Basic Computer Knowledges/Computer Network/Application Layer/DNS Resolution.md",
-    "Basic Computer Knowledges/Computer Network/Application Layer/HTTP.md",
-    "Basic Computer Knowledges/Computer Network/Transport Layer/UDP.md",
-    "Front End/2 CSS/index.md",
-    "Linux/firewalld",
-    "Basic Computer Knowledges/Computer Network/Network Layer/ICMP.md",
-    "Front End/字节直播.md"
+    "Linux/firewalld"
   ]
 }
