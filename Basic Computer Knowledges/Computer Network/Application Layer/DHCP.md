@@ -36,3 +36,4 @@ DHCP一共有8种报文，分别为DHCP Discover、DHCP Offer、DHCP Request、D
 ![image-20230504214551342](./DHCP.assets/image-20230504214551342.png)
 
 ![image-20230504215013225](./DHCP.assets/image-20230504215013225.png)
+
