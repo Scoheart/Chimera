@@ -103,11 +103,13 @@ C/S架构则是我们需要安装客户端应用，比如我们要使用QQ，微
 - JavaFX
 
 #### 新兴桌面软件开发框架
+
 - MAUI
 - Flutter Desktop
 - Compose Multiplatform
 
 #### 基于浏览器桌面软件开发框架
+
 - Electron
 - NW.js
 - CEF
@@ -116,6 +118,7 @@ C/S架构则是我们需要安装客户端应用，比如我们要使用QQ，微
 - Tauri
 
 #### 即时渲染桌面软件开发框架
+
 - Dear ImGui
 - Nuklear
 - RmIUi
