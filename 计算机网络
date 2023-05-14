@@ -1,0 +1,338 @@
+# Network 网络
+
+- Node 结点
+  - 交换机、路由器、主机等
+
+- Link 链路
+  - 网线、光纤
+
+
+# internet 互连网
+
+Network of Networks
+
+# Internet 因特网
+
+最大的互联网
+
+# WWW World Wide Web万维网
+
+因特网中的一项服务
+
+万维网（World Wide Web），通常简称为Web，是互联网上的一种信息服务系统。它由一系列互联的超文本文档（HyperText Documents）组成，这些文档通过互联网上的超文本链接（HyperLinks）相互关联，形成了一个庞大的全球信息网络。
+
+- URL
+- HTML
+- HTTP
+
+
+
+# 网络模型
+
+## ISO/ OSI七层模型
+
+International Organization for Standardization/ Open System Interconnect Reference Model
+
+| Layers             |
+| ------------------ |
+| Application Layer  |
+| Presentation Layer |
+| Session Layer      |
+| Transport Layer    |
+| Network Layer      |
+| Data Link Layer    |
+| Physical Layer     |
+
+
+
+## TCP/ IP四层模型
+
+Transmisson Control Protocol/ Internet Protocol
+
+| Layers                                                       |
+| ------------------------------------------------------------ |
+| Application Layer                                            |
+| Transport Layer                                              |
+| Internet Layer/ Network Layer                                |
+| Link Layer/ Network Interface Layer/ Network Access Layer/ Network Link Layer |
+
+
+
+## Five-Layer五层模型
+
+| Layers            |
+| :---------------- |
+| Application Layer |
+| Transport Layer   |
+| Network Layer     |
+| Data Link Layer   |
+| Physical Layer    |
+
+
+
+## TCP/IP Protocol Suite
+
+| ISO/OSI            | TCP/IP                  | Five-Layer        | TCP/IP Protocol Suite |
+| ------------------ | ----------------------- | :---------------- | --------------------- |
+| Application Layer  | Application Layer       | Application Layer | HTTP, HTTPS, DNS      |
+| Presentation Layer |                         |                   |                       |
+| Session Layer      |                         |                   |                       |
+| Transport Layer    | Transport Layer         | Transport Layer   | TCP, UDP              |
+| Network Layer      | Internet Layer          | Network Layer     | IP                    |
+| Data Link Layer    | Network Interface Layer | Data Link Layer   |                       |
+| Physical Layer     |                         | Physical Layer    |                       |
+
+
+
+## PDU
+
+Protocol Data Unit
+
+- PCI Protocol Control Information
+- SDU Service Data Unit
+
+(n-1)SDU = nPDU = nPCI + nSDU
+
+| ISO/OSI            | TCP/IP                  | Five-Layer        | TCP/IP Protocol Suite | PDU                         |
+| ------------------ | ----------------------- | :---------------- | --------------------- | --------------------------- |
+| Application Layer  | Application Layer       | Application Layer | HTTP, HTTPS, DNS      | Message                     |
+| Presentation Layer |                         |                   |                       |                             |
+| Session Layer      |                         |                   |                       |                             |
+| Transport Layer    | Transport Layer         | Transport Layer   | TCP, UDP              | Segment(TCP)/ Datagram(UDP) |
+| Network Layer      | Internet Layer          | Network Layer     | IP,ARP                | Packet                      |
+| Data Link Layer    | Network Interface Layer | Data Link Layer   |                       | Frame                       |
+| Physical Layer     |                         | Physical Layer    |                       | Bit                         |
+
+
+
+### Overview
+
+- APPL: message header + message body
+- TransL: src port + dest port 
+- NetL: src ip: src port + dest ip: dest port 
+- DLL: src MAC + dest MAC
+
+### Message
+
+
+
+### Segment/ Datagram
+
+#### Segment
+
+| PDU     | PCI        | SDU  |
+| ------- | ---------- | ---- |
+| Segment | TCP Header | Data |
+
+
+
+TCP Header：Fixed(20B) + Optional
+
+| 0-7                                       | 8-15                                        | 16-23            | 24-31 |
+| ----------------------------------------- | ------------------------------------------- | ---------------- | ----- |
+| Source Port                               | ～                                          | Destination Port | ～    |
+| Sequence Number                           |                                             |                  |       |
+| Acknowledgement Number                    |                                             |                  |       |
+| Data Offset(0-3)            Reserved(4-9) | Flags(10-15) [URG, ACK, PSH, RST, SYN, FIN] | Window           |       |
+| Checksum                                  |                                             | Urgent Pointer   |       |
+| Options                                   |                                             |                  |       |
+
+
+
+#### Datagram
+
+| PDU      | PCI        | SDU  |
+| -------- | ---------- | ---- |
+| Datagram | UDP Header | Data |
+
+
+
+UDP Header(8B)
+
+| 0-15        | 16-31            |
+| ----------- | ---------------- |
+| Source Port | Destination Port |
+| Length      | Checksum         |
+
+
+
+### Packet
+
+| PDU    | PCI       | SDU  |
+| ------ | --------- | ---- |
+| Packet | IP Header | Data |
+
+
+
+IP Header: Fixed(20B) + Options
+
+| 0-7                     | 8-15            | 16-23                           | 24-31 |
+| ----------------------- | --------------- | ------------------------------- | ----- |
+| Version\| Header Length | Type of Service | Total Length                    |       |
+| Identification          |                 | Flags(16-18) \| Fragment Offset |       |
+| Time to Live            | Protocol        | Header Checksum                 |       |
+| Source IP Address       |                 |                                 |       |
+| Destination IP Address  |                 |                                 |       |
+| Options                 |                 |                                 |       |
+
+
+
+### Frame
+
+### Bit
+
+
+
+# HTTP
+
+Hyper Text Transfer Protocol
+
+
+
+| HTTP request message |                                                              |
+| -------------------- | ------------------------------------------------------------ |
+| Request Line         | Method <SP> Request-URI <SP> HTTP-Version <CRLF>             |
+| Request Header       | Request-Header Fields1：value1,<br />Request-Header Fields2：value2, |
+| Blank Line           |                                                              |
+| Request body         |                                                              |
+
+
+
+| HTTP response message |                                                              |
+| --------------------- | ------------------------------------------------------------ |
+| Status Line           | HTTP-Version <SP> Status-code <SP> Reason-Phrase <CRLF>      |
+| Response Header       | Response-Header Fields1: Value1<br />Response-Header Fields2: Value2 |
+| Blank Line            |                                                              |
+| Response Body         |                                                              |
+
+
+
+HTTP Versions
+
+- HTTP/0.9
+- HTTP/1.0
+- HTTP/1.1
+- HTTP/2
+- HTTP/3
+
+
+
+## HTTP/0.9
+
+Method：GET
+
+- Simplex Request-Response
+- Only HTML
+- Terminated immediately after the response
+
+
+
+## HTTP/1.0
+
+https://www.w3.org/Protocols/HTTP/1.0/spec
+
+Methods：Get、HEAD、POST
+
+Additional Methods：PUT、DELETE、LINK、UNLINK
+
+- Full Duplex Request-Response
+- 请求完断开，Connection：keep-alive
+- 缓存机制
+- 数据类型
+- 安全机制
+
+
+
+## HTTP/1.1
+
+https://www.w3.org/Protocols/rfc2616/rfc2616.html
+
+https://www.rfc-editor.org/rfc/rfc9110.html
+
+Method：GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE
+
+- Persistent connections
+- Pipelining
+- Cache Control
+
+
+
+Disadvantage：
+
+- HTTP：head-of-line blocking
+
+
+
+## HTTP/2.0
+
+- Request multiplexing：Binary Frame
+- Data compression of HTTP headers
+- Prioritization of requests
+- Server push
+- 安全性
+
+
+
+Disadvantage：
+
+- TCP：head-of-line blocking
+- TCP协议僵化
+
+
+
+## HTTP/3.0
+
+- QUIC （based on UDP）
+  - TCP
+  - TLS
+
+
+
+# DNS解析
+
+- 浏览器缓存
+
+chrome://net-internals/#dns
+
+- 操作系统
+
+hosts文件
+
+- local NS
+
+电脑网络中配置的DNS服务器
+
+- Root NS
+
+. 根域名服务器   全球13台
+
+- TopL NS
+
+顶级域名服务器 com cn 
+
+- Authoritative NS
+
+授权域名服务器
+
+
+
+# TCP三次握手、四次挥手
+
+- Client
+  - SYN=1 seq=x
+- Server
+  - SYN=1 ACK=1 seq=y ack=x+1
+- Client
+  - ACK=1 seq=x+1 ack=y+1
+
+
+
+
+
+- Client
+  - FIN=1 seq=u
+- Server
+  - ACK=1 seq=v ack=u+1
+  - FIN=1 ACK=1 seq=w ack=u+1
+- Client
+  - ACK=1 seq=u+1 ack=w+1
