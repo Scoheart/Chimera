@@ -82,3 +82,44 @@ WHERE condition;
 
 
 
+### D
+
+delete from tb_name
+
+where condition
+
+
+
+### R
+
+select 
+
+
+
+
+
+insert into tn_name (colum1, column2)
+
+value 
+
+(#{}, value2),
+
+(value1, value2)
+
+
+
+#{}
+
+
+
+method
+
+- getUser(id).      通过id 查一个用户的n
+
+- listAllUser()。     查所有用户
+- addUser(id, name, age, addr, sex)。  新增一个用户
+- update(id name)。   根据id更新用户所有信息
+-  delete(id)      根据id删除用户
+
+
+
