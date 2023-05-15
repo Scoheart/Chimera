@@ -1,0 +1,125 @@
+# DDL
+
+## database
+
+### C create
+
+create database <db_name>;
+
+
+
+### R retrieve /read
+
+show databases;
+
+select database();
+
+
+
+### U Update
+
+
+
+### D delete
+
+drop database <db_name>;
+
+
+
+### usage
+
+use <db_name>;
+
+
+
+## table
+
+### C
+
+create table 
+
+
+
+### R
+
+show tables;
+
+
+
+### U
+
+
+
+### D
+
+drop table 
+
+
+
+
+
+# DML/DQL
+
+### C
+
+insert into table_name(cl1, cl2, cl3)
+
+value
+
+(value1, value2, value3),
+
+();
+
+
+
+### U
+
+```
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
+
+
+### D
+
+delete from tb_name
+
+where condition
+
+
+
+### R
+
+select 
+
+
+
+
+
+insert into tn_name (colum1, column2)
+
+value 
+
+(#{}, value2),
+
+(value1, value2)
+
+
+
+#{}
+
+
+
+method
+
+- getUser(id).      通过id 查一个用户的n
+
+- listAllUser()。     查所有用户
+- addUser(id, name, age, addr, sex)。  新增一个用户
+- update(id name)。   根据id更新用户所有信息
+-  delete(id)      根据id删除用户
+
+
+
