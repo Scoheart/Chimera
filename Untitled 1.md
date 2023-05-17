@@ -123,3 +123,169 @@ method
 
 
 
+userServiceImpl
+
+
+
+web
+
+
+
+controller 
+
+service 
+
+dao 
+
+
+
+
+
+
+
+db_jsu
+
+
+
+
+
+tb_student
+
+- username
+- password
+- grade
+- name
+
+
+
+tb_teacher
+
+- username
+- password
+- name
+- level
+
+
+
+get
+
+list
+
+insert
+
+delete
+
+update
+
+
+
+select * from user where id = #{}
+
+
+
+
+
+js对象  ——》     接口 json
+
+接口 json  --》     java对象
+
+
+
+js对象
+
+{
+
+ id;1
+
+}
+
+
+
+json对象
+
+{
+
+"id": 1
+
+}
+
+
+
+java对象
+
+{
+
+id:1
+
+}
+
+
+
+String
+
+
+
+
+
+
+
+js 模块化
+
+
+
+所有的js 写在一个js文件
+
+把一个js拆分成其他多个的js文件 js模块化
+
+
+
+
+
+所有的js代码都写着一个js文件里
+
+
+
+多个js文件里
+
+
+
+
+
+
+
+JS runtime
+
+js 模块化 
+
+
+
+runtime + module
+
+
+
+import b       es module
+
+require node
+
+
+
+
+
+js组成
+
+
+
+CommonJS。                cjs
+
+node                 esm
+
+
+
+
+
+ECMAScript module。   esm
+
+
+
+export defalut 
+
