@@ -253,39 +253,4 @@ js 模块化
 
 
 
-JS runtime
-
-js 模块化 
-
-
-
-runtime + module
-
-
-
-import b       es module
-
-require node
-
-
-
-
-
-js组成
-
-
-
-CommonJS。                cjs
-
-node                 esm
-
-
-
-
-
-ECMAScript module。   esm
-
-
-
-export defalut 
-
+JS
