@@ -64,3 +64,42 @@ reject = function (value) {
 }
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- PromiseState	
+  - pending
+    - fullfilled
+    - rejected
+

@@ -9,6 +9,14 @@ https://www.bilibili.com/video/BV18s411E7Tj?p=2&vd_source=5ef1597400e55d307f86d9
 
 - script load
 
+- CommonJS
+
+- AMD/CMD
+
+- UMD
+
+- ESM
+
 
 
 # ES Module
@@ -84,3 +92,11 @@ export {
   - 相对路径
   - .js后缀名不能省略
   - script标签 需要注明type=“module”
+
+
+
+# UMD
+
+UMD 其实挂载到了global对象上
+
+浏览器中就是window
