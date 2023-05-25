@@ -69,3 +69,46 @@ send()
 */
 ```
 
+![image-20230525030946451](./手写axios.assets/image-20230525030946451.png)
+
+
+
+
+
+|                         | past           | present         | future               | past  future |
+| ----------------------- | -------------- | --------------- | -------------------- | ------------ |
+| simple                  | did            | do              | will do              | would do     |
+| continuous              | was/were doing | be doing        | will be doing        |              |
+| perfect                 | had done       | have/has done   | will have done       |              |
+| perfect<br />continuous | had been doing | have been doing | will have been doing |              |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
