@@ -20,7 +20,7 @@ node
 - 2 HEADERS_RECEIVED
   - send调用了 
 - 3 LOADING
-  - 在接受数据
+  - 在接受数据 如果这个过程由于网速缓慢 那么 onreadystatechange 和 onprogress都会重复调用多次
 - 4 DONE
   - 完成接受，或者直接从1-4 失败了
 
@@ -30,8 +30,11 @@ node
   - onreadystatechange触发   readystate：0 -》1
   - onloadstart触发
 - send（）完成
-  - onreadystatechange触发     1 - 2       2 - 3      3- 4
-  - onload
+  - onreadystatechange触发     1 - 2       2 - 3
+  - onprogress              接受数据的过程
+  - onreadystatechange触发      3- 4
+  - onload                     数据接受完成
+  - [onerror]            如果有错误，会调用
   - onloadend
 
 
@@ -90,6 +93,9 @@ send()
 
 
 
+- adapter         适配器文件夹 采用适配器模式 
+  - xhr.js       浏览器中的的xhr
+  - http.js          nodejs中的http
 
 
 
@@ -97,10 +103,11 @@ send()
 
 
 
+onprogress 会在 readystate = 3的时候被反复调用
 
 
 
-
+xhr -> dispatchRequest -> request
 
 
 

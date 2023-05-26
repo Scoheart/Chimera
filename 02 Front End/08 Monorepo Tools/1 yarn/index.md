@@ -20,25 +20,3 @@
 
 
 
-es module 
-
-- file://
-
-
-
-cjs
-
-umd
-
-amd
-
-cmd
-
-
-
-
-
-
-
-
-
