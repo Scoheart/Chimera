@@ -100,3 +100,6 @@ export {
 UMD 其实挂载到了global对象上
 
 浏览器中就是window
+
+
+

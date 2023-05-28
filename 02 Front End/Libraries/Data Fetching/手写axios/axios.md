@@ -37,3 +37,38 @@
 响应数据转换
 
 返回结果为所选择的适配器 所返回的Promise对象
+
+
+
+- instance = new Axios(defalutConifg)
+- instance(config)
+- request(merge(defalutConifg, config))
+- dispatchRequest(config)
+- adapter.getAdapter()
+- xhr/http(config)
+
+
+
+# design pattern
+
+单例模式
+
+axios只暴露了一个实例
+
+工厂模式
+
+axios提供了create方法创建实例
+
+适配器模式
+
+axios通过适配器调用xhr或http
+
+原型模式？
+
+axios利用原型复制了axios实例
+
+
+
+J2EE
+
+拦截过滤器模式
