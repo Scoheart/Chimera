@@ -48,3 +48,32 @@ babel将jsx转换成下面三个函数
 
 - ReactDOM.render
 
+
+
+
+
+jsx
+
+createElement
+
+ReactElement
+
+FiberNode
+
+
+
+
+
+
+
+up，有点疑问希望能够解答一下，感谢
+
+就是网页是不是就称之web app
+
+然后移动端的网页 就是h5
+
+移动端的应用就称App
+
+
+
+视频里，那人一说App，那我第一意识就认为了是移动端的，像安卓，ios的手机应用，
