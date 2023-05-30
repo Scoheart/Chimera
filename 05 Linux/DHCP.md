@@ -21,7 +21,7 @@ vim /etc/dhcp/dhcpd.conf
 subnet 192.168.33.0 netmask 255.255.255.0 {
 	range 192.168.33.100 192.168.33.200;
 	option routers 192.168.33.1;
-   	option broadcast-address 192.168.33.255;
+  option broadcast-address 192.168.33.255;
 }
 
 ```

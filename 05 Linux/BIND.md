@@ -18,10 +18,10 @@ yum install bind
 
 ```nginx
 options {
-	listen-on port 53 { 127.0.0.1; };
+	listen-on port 53 { any; };
 	listen-on-v6 port 53 { ::1; }; 
 	directory 	"/var/named";                 //区域文件保存路径
-	allow-query     { localhost; }; 
+	allow-query     { any; }; 
  
 }
 
