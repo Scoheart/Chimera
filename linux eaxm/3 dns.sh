@@ -13,7 +13,7 @@ zone "scoheart.com" {
     allow-update {zone;};
 };
 
-zone "110.1.1.10.in-addr.arpa" {
+zone "1.1.10.in-addr.arpa" {
     type master;
     file "scoheart.com.arpa";
     allow-update {zone;};
@@ -45,6 +45,7 @@ $TTL 3000
     1H
     1H
 }
-    NS dns
-dns A 10.1.1.100
-@   PTR scoheart.com.
+    NS dns.
+100 PTR dns.scoheart.com.
+110 PTR scoheart.com.
+110 PTR www.scoheart.com.
